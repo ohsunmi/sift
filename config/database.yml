@@ -1,19 +1,27 @@
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: sift_development
   pool: 5
-  timeout: 5000
+  username: Sunmi
+  password: 
+  host: localhost
 
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: sift_test
   pool: 5
-  timeout: 5000
+  username: Sunmi
+  password: 
+  host: localhost
 
 production:
   adapter: postgresql
-  database: sift_emails
+  encoding: unicode
+  database: sift_production
   pool: 5
-  timeout: 5000
   username: Sunmi
-  password:
+  password: 
+  host: localhost
+
