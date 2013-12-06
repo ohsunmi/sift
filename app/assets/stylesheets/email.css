@@ -1,0 +1,128 @@
+img {
+  display: block;
+}
+
+#formatIssues a {
+  font-size: 14px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #b4b4b4;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+
+#container {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  table-layout: fixed;
+  letter-spacing: 0.25px;
+}
+
+#container td div {
+  overflow: hidden;
+}
+
+#title, .title {
+  color: white;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+#title a, .title a {
+  color: #fcd3da;
+  text-decoration: none;
+}
+
+#subTitle, .title {
+  color: #fcd3da;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.secondary, #minor-button a {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+td.button {
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+}
+
+a.button {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+  line-height: 50px;
+  -webkit-text-size-adjust: none;
+  letter-spacing: 0.5px;
+}
+
+#external-footer {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #696969;
+  letter-spacing: 0.25px;
+}
+#external-footer a {
+  color: #696969;
+}
+
+.footer.secondary {
+  color: white;
+}
+
+.title.with-icon {
+  font-size: 18px;
+}
+
+#footer, #view-on-the-web {
+  font-size: 12px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #696969;
+  letter-spacing: 0.25px;
+}
+#footer a, #view-on-the-web a {
+  color: #696969;
+  text-decoration: none;
+}
+
+.first-time-footer td {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.25px;
+}
+
+#first-time-footer-copyright {
+  font-size: 12px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.footer-block {
+  display: inline-block;
+  vertical-align: middle;
+}

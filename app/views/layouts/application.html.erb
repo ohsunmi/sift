@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sift</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<header>
+		<div id="logo">
+			<li><div id="logo_bg"><img id="logo_gif" src="assets/CapOnRed.gif" /></div></li>
+			<li><h1>Sift</h1></li>
+		</div><!-- #logo -->
+	</header>
+
+	<%= yield %>
+
+	<footer>
+		<img src="assets/FooterIcon.png" />
+		<div id="contact">
+			<li>ANGELLIST</li>
+			<li>CONTACT US</li>
+		</div><!-- #contact -->
+		<div id="info">
+			<li>CASTLE TECHNOLOGIES</li>
+			<li>MADE WITH 3 IN NYC & SF</li>
+		</div><!-- #info -->
+	</footer>
+
+</body>
+</html>
