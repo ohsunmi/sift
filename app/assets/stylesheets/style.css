@@ -34,7 +34,7 @@ header {
 	color: #FFFFFF;
 	width: 100%;
 	height: 150px;
-	padding: 62px 0 58px;
+	padding: 59px 0 48px;
 	text-align: center;
 	font-family: 'BrownStd-Light';
 	border-bottom-width: 4px;
@@ -49,13 +49,17 @@ header li {
 }
 
 header h1 {
-	font-size: 64px;
+	font-size: 89.9px;
 	margin-top: 20px;
+	padding-left: 8px;
 	font-weight: normal;
+	color: #F2F2F2;
+	line-height: 107.88px;
+	letter-spacing: -1px;
 }
 
 #logo {
-	width: 300px;
+	width: 314px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -106,7 +110,7 @@ body {
 	text-shadow: 1px 2px 0 rgba(0,0,0, 0.3);
 	text-align: center;
 	width: 372px;
-	height: 74px;
+	height: 72px;
 	margin: 72px auto 112px;
 	border-radius: 12px;
 	-webkit-border-radius: 12px;
@@ -133,12 +137,12 @@ body {
 #request_form {
 	margin: 72px auto 110px;
 	width: 540px;
-	height: 74px;
+	height: 72px;
 }
 
 #request_form input {
 	font-family: 'BrownStd-Bold';
-	height: 74px;
+	height: 72px;
 	padding: 0;
 	border: none;
 	outline: none;
@@ -146,7 +150,8 @@ body {
 }
 
 #request_form input[type=text] {
-	width: 350px;
+	width: 330px;
+	padding-left: 20px;
 	-webkit-border-top-left-radius: 12px;
 	-webkit-border-bottom-left-radius: 12px;
 	-moz-border-radius-topleft: 12px;
@@ -201,26 +206,28 @@ footer img {
 }
 
 #contact {
-	color: #A2A2A2;
-	font-size: 28px;
 	width: 380px;
 	margin: 0 auto;	
 }
 
 #contact li {
 	padding: 16px;
+	font-size: 27.99px;
+	color: #A2A2A2;
+	line-height: 33.59px;
 	float: left;
 }
 
 #info {
-	color: #AAAAAA;
-	font-size: 15px;
-	width: 380px;
+	width: 386px;
 	margin: 0 auto;
 	clear: both;
 }
 
 #info li {
 	padding: 6px;
+	font-size: 15.34px;
+	color: #AAAAAA;
+	line-height: 18.41px;
 	float: left;
 }
