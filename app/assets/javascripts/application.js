@@ -19,8 +19,13 @@ $(document).ready(function() {
 
 	var $request_form = $("#request_form"),
 			$request_button = $("#request_button"),
+			$submit_button = $('#submit_button'),
 			$thankyou_button = $("#thankyou_button"),
 			$logo_gif = $("#logo_gif");
+
+	function email_error(){
+		$submit_button.css('background', 'rgba(242, 60, 96, .5)');
+	}
 
 	$thankyou_button.hide();
 	$request_form.hide();
@@ -31,10 +36,17 @@ $(document).ready(function() {
 		$request_form.show();
 	});
 
-	$request_form.on('submit', function(event){
-		$request_form.hide();
-		$thankyou_button.show();
-	});
+	// $request_form.on('submit', function(event){
+	// 	$request_form.hide();
+	// 	$thankyou_button.show();
+	// });
+
+	$request_form
+		.bind('ajax:error', function(){email_error()})
+		.bind('ajax:success', function() {
+			$request_form.hide();
+			$thankyou_button.show();
+		});
 
 	$logo_gif.on('mouseover', function(){
 		$(this).attr("src", "/assets/CapOnRed.gif");

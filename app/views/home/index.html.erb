@@ -11,7 +11,7 @@
 
 	<%= form_for(@user, :as => :new_user, :method => "post", :url => "/request", :html => {:id => "request_form"}, :format => :json, :remote => true) do |f| %>
 		<%= f.text_field :email, :placeholder => 'EMAIL' %>
-		<%= f.submit "SUBMIT" %>
+		<%= f.submit "SUBMIT", :id => 'submit_button' %>
 	<% end %>
 
 	<div id="thankyou_button" class="buttons">

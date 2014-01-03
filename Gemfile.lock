@@ -119,7 +119,6 @@ GEM
     uglifier (2.3.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    validates_email_format_of (1.5.3)
 
 PLATFORMS
   ruby
@@ -136,4 +135,3 @@ DEPENDENCIES
   sdoc
   turbolinks
   uglifier (>= 1.3.0)
-  validates_email_format_of

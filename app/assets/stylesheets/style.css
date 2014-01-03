@@ -124,9 +124,13 @@ body {
 	width: 372px;
 	height: 72px;
 	margin: 72px auto 112px;
-	border-radius: 12px;
+	border-radius: 18px;
 	-webkit-border-radius: 18px;
 	cursor: pointer;
+}
+
+.light_button {
+	background: green;
 }
 
 #thankyou_button {
@@ -161,17 +165,13 @@ body {
 	border: none;
 	outline: none;
 	float: left;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
 }
 
 #request_form input[type=text] {
-	width: 330px;
+	width: 520px;
 	padding-left: 20px;
-	-webkit-border-top-left-radius: 12px;
-	-webkit-border-bottom-left-radius: 12px;
-	-moz-border-radius-topleft: 12px;
-	-moz-border-radius-bottomleft: 12px;
-	border-top-left-radius: 12px;
-	border-bottom-left-radius: 12px;
 }
 
 #request_form input[type=submit] {
@@ -179,9 +179,7 @@ body {
 	color: #FFFFFF;
 	text-shadow: 1px 2px 0 rgba(0,0,0, 0.3);
 	width: 200px;
-	margin-left: -10px;
-	border-radius: 12px;
-	-webkit-border-radius: 12px;
+	margin-left: -200px;
 }
 
 #phone_container {
