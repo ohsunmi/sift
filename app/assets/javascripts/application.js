@@ -60,8 +60,7 @@ $(document).ready(function() {
 			play: {
 				effect: "slide",
 				interval: 3000,
-				auto: true,
-				pauseOnHover: true
+				auto: true
 			}
 		});
 	});
