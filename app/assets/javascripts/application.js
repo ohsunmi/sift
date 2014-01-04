@@ -61,8 +61,7 @@ $(document).ready(function() {
 				effect: "slide",
 				interval: 3000,
 				auto: true,
-				pauseOnHover: false,
-				restartDelay: 2500
+				pauseOnHover: true
 			}
 		});
 	});
