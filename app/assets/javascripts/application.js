@@ -31,9 +31,13 @@ $(document).ready(function() {
 
 	function checkEmail(){
 		var email = $("#new_user_email").val();
+		var button = $submit_button.css('display');
 		validateEmail(email);
 		if (validateEmail(email) === true) {
-			$submit_button.show();
+			// $submit_button.show();
+			$submit_button.fadeIn(200);
+		} else if (validateEmail(email) === false && button == 'block') {
+			$submit_button.fadeOut(200);
 		} else {
 			$submit_button.hide();
 		}
