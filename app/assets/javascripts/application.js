@@ -52,17 +52,26 @@ $(document).ready(function() {
 		$(this).attr("src", "/assets/CapOnRed.gif");
 	});
 
-	// screenshots carousel
-	$(function(){
-		$("#slides").slidesjs({
-			width: 421,
-			height: 747,
-			play: {
-				effect: "slide",
-				interval: 3000,
-				auto: true
-			}
-		});
+	// screenshots carousel (slidejs)
+	// $(function(){
+	// 	$("#slides").slidesjs({
+	// 		width: 421,
+	// 		height: 747,
+	// 		play: {
+	// 			effect: "slide",
+	// 			interval: 3000,
+	// 			auto: true
+	// 		}
+	// 	});
+	// });
+
+	// screenshots carousel (swipejs)
+	window.mySwipe = new Swipe(document.getElementById('phone'),{
+		speed: 400,
+		auto: 3000,
+		continuous: true,
+		disableScroll: false,
+		stopPropagation: true
 	});
 
 });
