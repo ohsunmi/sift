@@ -46,7 +46,7 @@ header {
 	color: #FFFFFF;
 	width: 100%;
 	height: 150px;
-	padding: 59px 0 48px;
+	padding: 17px 0 17px;
 	text-align: center;
 	font-family: 'BrownStd-Light';
 	border-bottom-width: 4px;
@@ -106,11 +106,11 @@ body {
 #tagline_container p:first-child {
 	font-family: 'BrownStd-Light';
 	font-size: 50px;
-	margin-top: 112px;
+	margin-top: 56px;
 }
 
 #tagline_container p {
-	margin-top: 42px;
+	margin-top: 34px;
 	margin-bottom: 0;
 }
 
@@ -123,7 +123,7 @@ body {
 	text-align: center;
 	width: 372px;
 	height: 72px;
-	margin: 72px auto 112px;
+	margin: 50px auto 72px;
 	border-radius: 18px;
 	-webkit-border-radius: 18px;
 	cursor: pointer;
@@ -153,7 +153,7 @@ body {
 	}
 
 #request_form {
-	margin: 72px auto 110px;
+	margin: 50px auto 72px;
 	width: 540px;
 	height: 72px;
 }
@@ -218,7 +218,8 @@ footer img {
 }
 
 #contact {
-	width: 380px;
+	width: 370px;
+	height: 50px;
 	margin: 0 auto;	
 }
 
@@ -241,4 +242,8 @@ footer img {
 	font-size: 15.34px;
 	color: #AAAAAA;
 	line-height: 18.41px;
+}
+
+#icon-heart {
+	font-size: 15px;
 }
