@@ -21,49 +21,45 @@ $(document).ready(function() {
 			$request_button = $("#request_button"),
 			$submit_button = $('#submit_button'),
 			$thankyou_button = $("#thankyou_button"),
-			$logo_gif = $("#logo_gif");
+			$logo_gif = $("#logo_gif"),
+			t;
 
-	function email_error(){
-		$submit_button.css('background', 'rgba(242, 60, 96, .5)');
+	function validateEmail(email) {
+    var regex = /\S+@\S+\.\S+/;
+    return regex.test(email);
+	}
+
+	function checkEmail(){
+		var email = $("#new_user_email").val();
+		validateEmail(email);
+		if (validateEmail(email) === true) {
+			$submit_button.show();
+		} else {
+			$submit_button.hide();
+		}
 	}
 
 	$thankyou_button.hide();
 	$request_form.hide();
+	$submit_button.hide();
 	$request_button.show();
 
 	$request_button.on('click', function(){
 		$request_button.hide();
 		$request_form.show();
+		t = setInterval(checkEmail, 500);
 	});
 
-	// $request_form.on('submit', function(event){
-	// 	$request_form.hide();
-	// 	$thankyou_button.show();
-	// });
+	$request_form.on('submit', function(event){
+		clearInterval(t);
+		$request_form.hide();
+		$thankyou_button.show();
+	});
 
-	$request_form
-		.bind('ajax:error', function(){email_error()})
-		.bind('ajax:success', function() {
-			$request_form.hide();
-			$thankyou_button.show();
-		});
-
+	// activate gif on mouseover
 	$logo_gif.on('mouseover', function(){
 		$(this).attr("src", "/assets/CapOnRed.gif");
 	});
-
-	// screenshots carousel (slidejs)
-	// $(function(){
-	// 	$("#slides").slidesjs({
-	// 		width: 421,
-	// 		height: 747,
-	// 		play: {
-	// 			effect: "slide",
-	// 			interval: 3000,
-	// 			auto: true
-	// 		}
-	// 	});
-	// });
 
 	// screenshots carousel (swipejs)
 	window.mySwipe = new Swipe(document.getElementById('phone'),{
