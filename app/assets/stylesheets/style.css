@@ -304,7 +304,8 @@ footer img {
 	#request_form input[type=submit] {
 		width: 440px;
 		margin-left: 0;
-		margin-top: 20px;
+		margin-top: 14px;
+		margin-bottom: 20px;
 	}
 
 	#thankyou_button {
@@ -314,7 +315,8 @@ footer img {
 	}
 
 	#phone_container {
-		margin-top: 120px;
+		/*margin-top: 120px;*/
+		clear: both;
 	}
 }
 
