@@ -85,12 +85,12 @@ $(document).ready(function() {
 		$thankyou_button.show();
 	});
 
-	// activate gif on mouseover
+	// activate gif on hover
 	$logo_gif.on('mouseover', function(){
 		$(this).attr("src", "/assets/CapOnRed.gif");
 	});
 
-	// screenshots carousel (swipejs)
+	// image carousel
 	window.mySwipe = new Swipe(document.getElementById('phone'),{
 		speed: 400,
 		auto: 3000,

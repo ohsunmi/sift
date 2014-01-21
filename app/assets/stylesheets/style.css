@@ -285,17 +285,22 @@ footer img {
 /* mobile */
 @media only screen and (min-width: 320px) and (max-width: 568px) {
 	html {
-		width: 562px;
+		width: 568px;
 	}
 
 	#main_container {
-		width: 460px;
+		width: 568px;
 		z-index: 1;
+	}
+
+	#tagline_container p:last-child {
+		width: 480px;
+		margin: 18px auto 0;
 	}
 
 	#request_form {
 		width: 420px;
-		margin-left: 10px;
+		margin-left: 60px;
 	}
 
 	#request_form input[type=text] {
@@ -313,10 +318,6 @@ footer img {
 		width: 420px;
 		font-size: 25px;
 		letter-spacing: -1px;
-	}
-
-	#phone_container {
-		/*clear: both;*/
 	}
 }
 

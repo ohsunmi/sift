@@ -10,13 +10,10 @@ class HomeController < ApplicationController
 			email = @user.email
 			RequestInvite.send_email(email).deliver
 
-			# url ="https://us3.api.mailchimp.com/1.3/?method=listSubscribe&apikey=a138e6caaa8ecd7cecaa7af04d176617-us3&id=a9dffbb9f8&email_address=" +email
-			# response = HTTParty.post(url)
-			# render :json => response
-
 			redirect_to root_url
 		end
 	end
+
 
 	private
 
