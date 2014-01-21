@@ -319,5 +319,9 @@ footer img {
 		font-size: 25px;
 		letter-spacing: -1px;
 	}
+
+	footer {
+		width: 568px;
+	}
 }
 
