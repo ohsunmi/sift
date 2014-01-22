@@ -14,6 +14,11 @@ class HomeController < ApplicationController
 		end
 	end
 
+	# test
+	def page
+		
+	end
+
 
 	private
 
