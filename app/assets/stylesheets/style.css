@@ -42,9 +42,9 @@ header {
 	text-align: center;
 	font-family: 'BrownStd-Light';
 	border-bottom-width: 4px;
-	-moz-border-image:url("/assets/HeaderBorder.gif") 0 0 4 0 repeat;
-	-webkit-border-image:url("/assets/HeaderBorder.gif") 0 0 4 0 repeat;
-	border-image: url("/assets/HeaderBorder.gif") 0 0 4 0 repeat;
+	-moz-border-image:url("/assets/HeaderBorder.gif") 0 0 20 0 repeat;
+	-webkit-border-image:url("/assets/HeaderBorder.gif") 0 0 20 0 repeat;
+	border-image: url("/assets/HeaderBorder.gif") 0 0 20 0 repeat;
 }
 
 header li {
@@ -286,6 +286,12 @@ footer img {
 @media only screen and (min-width: 320px) and (max-width: 568px) {
 	html {
 		width: 568px;
+	}
+
+	header {
+		-moz-border-image:url("/assets/HeaderBorder.gif") 0 0 4 0 repeat;
+		-webkit-border-image:url("/assets/HeaderBorder.gif") 0 0 4 0 repeat;
+		border-image: url("/assets/HeaderBorder.gif") 0 0 4 0 repeat;
 	}
 
 	#main_container {
